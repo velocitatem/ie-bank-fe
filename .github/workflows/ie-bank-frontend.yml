@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  FRONTEND_WEBAPP_DEV: jseijas-fe-dev
+  FRONTEND_WEBAPP_DEV: drosel-fe-dev
 
 jobs:
   build:
@@ -52,7 +52,7 @@ jobs:
       - uses: azure/login@v2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-      
+
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
