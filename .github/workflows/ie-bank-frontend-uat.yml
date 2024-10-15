@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  FRONTEND_WEBAPP_UAT: drosel-fe-uat-temp
+  FRONTEND_WEBAPP_UAT: drosel-fe-uat
 
 jobs:
   build:
